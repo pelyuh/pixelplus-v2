@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixelplus-v2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+
+    <div class="popup-form" id="popup-form">
+        <div class="popup-close"></div>
+        <div class="popup-content" id="popup-content">
+
+            <form id="popup-form-items" method="post">
+                <h3>обратная связь</h3>
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" required>
+
+                <label for="telephone">Телефон *</label>
+                <input type="tel" id="telephone" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" required placeholder="Поле обязательно для заполнения">
+
+                <label for="message">Сообщение</label>
+                <textarea id="message"></textarea>
+                <input type="submit" value="отправить">
+
+            </form>
+        </div>
+    </div>
+
+    <header class="header-container-logo">
+        <section class="header-wrapper-logo">
+            <div class="header-wrapper-items">
+                <div>
+                    <div class="header-logo">
+                        <img src="img/logo.png" alt="logo" title="logo">
+                    </div>
+                </div>
+                <div>
+                    <div class="header-phone">
+                        <p>+7(499) 777-77-77</p>
+                        <p>+7(499) 777-77-77</p>
+                        <p class="header-feedback">
+                            <a class="header-feedback-click" href="#">Обратная связь</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-container-nav">
+            <nav class="header-wrapper-nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="main-carousel">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="img/slide-1.png" alt="slide-1" title="slide-1" style="width:100%; height: 100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/slide-2.png" alt="slide-2" title="slide-2" style="width:100%; height: 100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="breadcrumbs-wrapper">
+                <div class="breadcrumb">
+                    <a class="breadcrumbs" href="#">Главная</a><span> / </span>
+                    <a class="breadcrumbs" href="#">Каталог</a><span> / </span>
+                    <a class="breadcrumbs active">Бытовая техника</a>
+                </div>
+            </div>
+            <div class="main-content-wrapper">
+                <div class="main-content-nav">
+                    <ul>
+                        <li class="main-content-nav-item"><a href="#">Автомобили</a></li>
+                        <li class="main-content-nav-item active-item"><a href="#">Бытовая техника</a>
+                            <ul class="main-content-nav-subitems">
+                                <li class="main-content-nav-subitem"><a class="active-sub-item" href="#">Микроволновки</a></li>
+                                <li class="main-content-nav-subitem"><a href="#">Холодильники</a></li>
+                                <li class="main-content-nav-subitem"><a href="#">Посудомоечные машины</a></li>
+                                <li class="main-content-nav-subitem"><a href="#">Чайники</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-content-nav-item"><a href="#">Мобильная техника</a></li>
+                        <li class="main-content-nav-item"><a href="#">Компьютеры</a></li>
+                        <li class="main-content-nav-item"><a href="#">Одежда</a></li>
+                        <li class="main-content-nav-item"><a href="#">Недвижимость</a></li>
+                    </ul>
+                    <div class="main-content-nav-price">
+                        <img src="img/ex.png" alt="price" title="price">
+                        <p>Прайс-лист</p>
+                    </div>
+                </div>
+                <div class="main-content-sub-wrapper">
+                    <div class="main-content-items">
+                        <div class="main-content-item">
+                            <img src="img/nophoto.png" width="210" height="209" alt="photo">
+                            <p class="main-content-item-text">Самый клевый чайник, который надо купить!</p>
+                            <div class="main-content-item-price">
+                                <p>1 900 р.</p>
+                                <img src="img/addtobasket_mini.png" width="28" height="21" alt="bascet">
+                            </div>
+                        </div>
+                        <div class="main-content-item">
+                            <img src="img/nophoto.png" width="210" height="209" alt="photo">
+                            <p class="main-content-item-text">Самый клевый чайник, который надо купить!</p>
+                            <div class="main-content-item-price">
+                                <p>1 900 р.</p>
+                                <img src="img/addtobasket_mini.png" width="28" height="21" alt="bascet">
+                            </div>
+                        </div>
+                        <div class="main-content-item">
+                            <img src="img/nophoto.png" width="210" height="209" alt="photo">
+                            <p class="main-content-item-text">Самый клевый чайник, который надо купить!</p>
+                            <div class="main-content-item-price">
+                                <p>1 900 р.</p>
+                                <img src="img/addtobasket_mini.png" width="28" height="21" alt="bascet">
+                            </div>
+                        </div>
+                        <div class="main-content-item">
+                            <img src="img/nophoto.png" width="210" height="209" alt="photo">
+                            <p class="main-content-item-text">Самый клевый чайник, который надо купить!</p>
+                            <div class="main-content-item-price">
+                                <p>1 900 р.</p>
+                                <img src="img/addtobasket_mini.png" width="28" height="21" alt="bascet">
+                            </div>
+                        </div>
+                        <div class="main-content-item">
+                            <img src="img/nophoto.png" width="210" height="209" alt="photo">
+                            <p class="main-content-item-text">Самый клевый чайник, который надо купить!</p>
+                            <div class="main-content-item-price">
+                                <p>1 900 р.</p>
+                                <img src="img/addtobasket_mini.png" width="28" height="21" alt="bascet">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="main-content-paginator">
+                        <ul>
+                            <li class="main-content-paginator-item"><a href="#">1</a></li>
+                            <li class="main-content-paginator-item"><a href="#">2</a></li>
+                            <li class="main-content-paginator-item"><a class="active" href="#">3</a></li>
+                            <li class="main-content-paginator-item"><a href="#">4</a></li>
+                            <li class="main-content-paginator-item"><a href="#">5</a></li>
+                            <li class="main-content-paginator-item"><a href="#">6</a></li>
+                            <li class="main-content-paginator-item"><a href="#">7</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="main-content-text">
+                        <p class="main-content-text-item left">
+                            Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+                        </p>
+                        <p class="main-content-text-item right">
+                            Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-container-section">
+            <div class="footer-wrapper">
+                <div class="footer-item">
+                    <div>
+                        <p class="footer-item-copyright">© 2012–2013 ЗАО «Компания»</p>
+                        <a href="mailto:info@name.ru">info@name.ru</a>
+                    </div>
+                </div>
+                <div class="footer-nav-wrapper">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Прайс-лист</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-company">
+                    <div class="footer-company-container">
+                        <div>
+                            <img src="img/company.png" alt="company" title="company">
+                        </div>
+                        <div>
+                            <p>Разработка сайта — <br> компания «Пиксель Плюс»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div>
+
+   <!-- <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/carusel-js.js"></script>
+    -->
+
+</body>
+</html>
